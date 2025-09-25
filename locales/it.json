@@ -1,0 +1,78 @@
+{
+    "tagline": "DISBOARD: L'elenco pubblico dei server",
+    "inviteChanged": "Il link di invito è stato cambiato in {{ inviteChannel }}. :sparkles:",
+    "bumpDone": "Bump completato!",
+    "checkOnDisboard": {
+        "embed": "Dai un'occhiata [su DISBOARD]({{ link }}).",
+        "text": "Dai un'occhiata su DISBOARD: {{ link }}."
+    },
+    "help": {
+        "title": "Ciao! Sono un bot per DISBOARD ({{ siteLink }})",
+        "commandList": "ELENCO COMANDI",
+        "descriptions": {
+            "bump": "Bumpa questo server.",
+            "page": "Ottieni un link alla pagina DISBOARD del server.",
+            "invite": "Imposta l'invito a questo canale. Se [channel] è specificato, crea un invito per quel canale.",
+            "help": "Questo!"
+        },
+        "howTo": "**Come aggiungo il mio server a DISBOARD?**\n\n 1. Accedi al sito di DISBOARD,\n 2. Vai alla Dashboard,\n 3. Clicca su \"Aggiungi nuovo server\"\nCompila le informazioni del tuo server e salvale. Verrai reindirizzato alla schermata di autorizzazione di Discord. Se non accade, clicca sul pulsante \"Aggiungi Bot\" nella pagina di modifica del server.",
+        "adminOnly": "Solo amministratori.",
+        "supportServer": {
+            "embed": "Hai bisogno di aiuto? Unisciti al [server di supporto]({{ invite }}).",
+            "text": "Hai bisogno di aiuto? Unisciti al server di supporto:\n<{{ invite }}>."
+        }
+    },
+    "warning": {
+        "unlisted": "Questo server non è più elencato perché l'invito è stato eliminato.\n*Sei un amministratore? Rigenera l'invito eseguendo `{{ command }}`*",
+        "deprecation": {
+            "message": "⚠️ **I comandi regolari stanno venendo sostituiti dai comandi slash.**\nDa <t:{{ timestamp }}:F> i comandi regolari non funzioneranno più e il bot risponderà solo ai comandi slash.\nProva a digitare `/` per vedere l'elenco dei comandi disponibili.",
+            "updateLink": "Se non riesci a vedere l'elenco dei comandi per DISBOARD, prova a riaggiungere il bot tramite il link qui sotto:\n {{ updateScopeLink }}."
+        }
+    },
+    "error": {
+        "generic": "Si è verificato un errore sconosciuto.\n\nProva a eseguire di nuovo il comando. Se l'errore persiste, faccelo sapere nel nostro server di supporto (<{{ supportServerInvite }}>).\n\nRiferimento errore: `{{ errorId }}`",
+        "adminOnly": "Questo comando può essere eseguito solo dagli amministratori.",
+        "invalidChannel": "Canale non valido: {{ input }}\nProva a menzionare un canale, ad esempio: {{ exampleChannel }}.",
+        "invalidChannelType": "Posso creare un invito solo in:\n• Un canale di testo regolare.\n• Un canale annunci.\n\nSpecifica uno dei tipi di canale sopra per creare un invito.",
+        "handlingCommand": "Sto gestendo il tuo comando!",
+        "api": {
+            "down": "L'API di DISBOARD sembra non funzionare! :sob:\nPer favore riprova più tardi.",
+            "timeout": "L'API di DISBOARD non ha risposto in tempo! :sob:\nPer favore riprova più tardi."
+        },
+        "cooldown": {
+            "command": "Sei in cooldown. Attendi {{ numSeconds }} secondi prima di eseguire di nuovo questo comando.",
+            "user": "Sei in cooldown. Attendi {{ numSeconds }} secondi prima di eseguire un altro comando."
+        },
+        "permission": {
+            "notice": {
+                "sameChannel": "Non ho abbastanza permessi per creare un invito:",
+                "withTarget": "Non ho abbastanza permessi nel canale menzionato per creare un invito:"
+            },
+            "instructions": {
+                "sameChannel": "Concedimi i permessi sopra in questo canale.",
+                "withTarget": "Concedimi i permessi sopra in {{ channel }}."
+            },
+            "details": "{{ viewChannelEmoji }} Visualizza Canale\n{{ createInviteEmoji }} Crea Invito\n{{ manageChannelEmoji }} Gestisci Canale",
+            "followUp": "Una volta fatto, esegui il comando: `{{ command }}`."
+        },
+        "server": {
+            "private": {
+                "embed": "Questo server è impostato su **privato** e quindi non può essere bumpato.\n*Sei un amministratore? Impostalo su pubblico dalla [dashboard]({{ dashboardLink }}) per bumpare questo server.*",
+                "text": "Questo server è impostato su **privato** e quindi non può essere bumpato.\n*Sei un amministratore? Impostalo su pubblico dalla dashboard (<{{ dashboardLink }}>) per bumpare questo server.*"
+            },
+            "notFound": {
+                "embed": "Questo server non è ancora stato aggiunto a DISBOARD.\n*Sei un amministratore? Aggiungi questo server tramite la [dashboard]({{ dashboardLink }}).*",
+                "text": "Questo server non è ancora stato aggiunto a DISBOARD.\n*Sei un amministratore? Aggiungi questo server tramite la dashboard su <{{ dashboardLink }}>.*"
+            }
+        }
+    },
+    "debug": {
+        "server": "`ID Server`: {{ serverId }}",
+        "shard": "`ID Shard`: {{ shardId }}",
+        "cluster": "`ID Cluster`: {{ clusterId }}",
+        "invite": "`Link di invito`: {{ invite }}",
+        "main": "`Lingua principale`: `{{ langCode }}`",
+        "default": "`Canale predefinito`: {{ defaultChannel }}",
+        "latency": "`Latenza Shard`: {{ shardLatency }}ms"
+    }
+}
